@@ -73,6 +73,9 @@ force force ace_csw_handleExtraMagazines = true;
 force force ace_csw_progressBarTimeCoefficent = 1;
 
 // ACE Explosives
+force force ace_explosives_customTimerDefault = 30;
+force force ace_explosives_customTimerMax = 900;
+force force ace_explosives_customTimerMin = 5;
 force force ace_explosives_explodeOnDefuse = false;
 force force ace_explosives_punishNonSpecialists = false;
 force force ace_explosives_requireSpecialist = false;
@@ -170,6 +173,9 @@ force force ace_map_mapLimitZoom = false;
 force force ace_map_mapShake = true;
 force force ace_map_mapShowCursorCoordinates = false;
 force force ace_markers_moveRestriction = 0;
+force force ace_markers_timestampEnabled = false;
+force force ace_markers_timestampFormat = "HH:MM";
+force force ace_markers_timestampHourFormat = 24;
 
 // ACE Map Gestures
 force force ace_map_gestures_allowCurator = true;
@@ -203,6 +209,7 @@ force force ace_medical_fractures = 1;
 force force ace_medical_gui_enableActions = 0;
 force force ace_medical_gui_enableMedicalMenu = 0;
 force force ace_medical_gui_enableSelfActions = true;
+force force ace_medical_gui_interactionMenuShowTriage = 1;
 force force ace_medical_gui_maxDistance = 3;
 force force ace_medical_gui_openAfterTreatment = true;
 force force ace_medical_ivFlowRate = 1;
@@ -212,12 +219,14 @@ force force ace_medical_playerDamageThreshold = 1;
 force force ace_medical_spontaneousWakeUpChance = 1;
 force force ace_medical_spontaneousWakeUpEpinephrineBoost = 1;
 force force ace_medical_statemachine_AIUnconsciousness = false;
+force force ace_medical_statemachine_cardiacArrestBleedoutEnabled = true;
 force force ace_medical_statemachine_cardiacArrestTime = 3600;
 force force ace_medical_statemachine_fatalInjuriesAI = 0;
 force force ace_medical_statemachine_fatalInjuriesPlayer = 1;
 force force ace_medical_treatment_advancedBandages = 2;
 force force ace_medical_treatment_advancedDiagnose = true;
 force force ace_medical_treatment_advancedMedication = true;
+force force ace_medical_treatment_allowBodyBagUnconscious = false;
 force force ace_medical_treatment_allowLitterCreation = true;
 force force ace_medical_treatment_allowSelfIV = 0;
 force force ace_medical_treatment_allowSelfPAK = 0;
@@ -240,7 +249,14 @@ force force ace_medical_treatment_medicIV = 2;
 force force ace_medical_treatment_medicPAK = 2;
 force force ace_medical_treatment_medicSurgicalKit = 2;
 force force ace_medical_treatment_timeCoefficientPAK = 5;
+force force ace_medical_treatment_treatmentTimeAutoinjector = 5;
+force force ace_medical_treatment_treatmentTimeBodyBag = 15;
+force force ace_medical_treatment_treatmentTimeCPR = 15;
+force force ace_medical_treatment_treatmentTimeIV = 12;
+force force ace_medical_treatment_treatmentTimeSplint = 7;
+force force ace_medical_treatment_treatmentTimeTourniquet = 7;
 force force ace_medical_treatment_woundReopenChance = 1;
+force force ace_medical_treatment_woundStitchTime = 5;
 
 // ACE Name Tags
 ace_nametags_defaultNametagColor = [0.77,0.51,0.08,1];
@@ -627,6 +643,13 @@ force force GSRI_Normandie_hasWeapons = true;
 force force GSRI_Normandie_identifier = "651";
 force force GSRI_Normandie_name = "Normandie";
 force force GSRI_Normandie_nameplate = "gsri_opex\images\normandie.paa";
+
+// KKA3 Injured Animations
+force force kka3_inj_AI = true;
+force force kka3_inj_crawling = true;
+force force kka3_inj_delay = 5;
+force force kka3_inj_player = true;
+force force kka3_inj_resetdelay = 5;
 
 // KKA3 TFAR Animations
 force force kka3_animationMode = "auto";
