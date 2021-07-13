@@ -418,7 +418,7 @@ force force ace_vehicles_speedLimiterStep = 5;
 // ACE View Distance Limiter
 force force ace_viewdistance_enabled = true;
 force force ace_viewdistance_limitViewDistance = 10000;
-force force ace_viewdistance_objectViewDistanceCoeff = 6;
+force force ace_viewdistance_objectViewDistanceCoeff = 5;
 ace_viewdistance_viewDistanceAirVehicle = 14;
 ace_viewdistance_viewDistanceLandVehicle = 6;
 ace_viewdistance_viewDistanceOnFoot = 6;
@@ -512,9 +512,6 @@ force force asr_ai3_danger_seekcover = true;
 force force asr_ai3_danger_usebuildings = 0.8;
 force force asr_ai3_hitreactions_fallDown = true;
 force force asr_ai3_hitreactions_STAY_IN_VEH = false;
-force force asr_ai3_incognito_incodbg = false;
-force force asr_ai3_incognito_incodiff = 3;
-force force asr_ai3_incognito_incohint = false;
 force force asr_ai3_main_factionskip_str = "['LOP_AFR_Civ','LOP_CHR_Civ','LOP_TAK_Civ']";
 force force asr_ai3_rearming_debug_rearm = false;
 force force asr_ai3_rearming_rearm = 40;
@@ -525,17 +522,6 @@ force force asr_ai3_skills_debug_setskill = false;
 force force asr_ai3_skills_packNVG = true;
 force force asr_ai3_skills_setskills = true;
 force force asr_ai3_skills_teamsuperai = true;
-
-// CBA UI
-cba_diagnostic_ConsoleIndentType = 0;
-cba_ui_notifyLifetime = 4;
-cba_ui_StorePasswords = 1;
-
-// CBA Weapons
-force force cba_disposable_dropUsedLauncher = 0;
-force force cba_disposable_replaceDisposableLauncher = true;
-cba_events_repetitionMode = 1;
-cba_optics_usePipOptics = true;
 
 // CF_BAI
 force force CF_BAI_subskills_maximum_aimingAccuracy = 0;
@@ -627,8 +613,15 @@ force force CF_BAI_suppression_reloadSpeed = 0.5;
 force force CF_BAI_suppression_spotDistance = 0.5;
 force force CF_BAI_suppression_spotTime = 0.1;
 
-// Community Base Addons - Network
+// Community Base Addons
+cba_diagnostic_ConsoleIndentType = -1;
+force force cba_disposable_dropUsedLauncher = 0;
+force force cba_disposable_replaceDisposableLauncher = true;
+cba_events_repetitionMode = 1;
 force force cba_network_loadoutValidation = 2;
+cba_optics_usePipOptics = true;
+cba_ui_notifyLifetime = 4;
+cba_ui_StorePasswords = 1;
 
 // Goobin's Gameplay Enhancements Core
 gge_core_var_debugMode = false;
@@ -662,6 +655,10 @@ force force GSRI_Normandie_hasWeapons = true;
 force force GSRI_Normandie_identifier = "651";
 force force GSRI_Normandie_name = "Normandie";
 force force GSRI_Normandie_nameplate = "gsri_opex\images\normandie.paa";
+
+// GSRI Skydiving
+force force gsri_skydiving_enabled = true;
+force force gsri_skydiving_mode = "newtonian";
 
 // KKA3 TFAR Animations
 force force kka3_animationMode = "auto";
@@ -761,6 +758,7 @@ force force zen_common_disableGearAnim = true;
 force force zen_common_preferredArsenal = 0;
 force force zen_compat_ace_hideModules = true;
 force force zen_context_menu_enabled = 2;
+force force zen_context_menu_overrideWaypoints = false;
 force force zen_editor_addGroupIcons = true;
 force force zen_editor_declutterEmptyTree = true;
 force force zen_editor_disableLiveSearch = false;
