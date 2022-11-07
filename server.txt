@@ -911,7 +911,7 @@ force force gsri_vip_equipingHeadgearDuration = 2;
 force force gsri_vip_equipingHeadgearExtraDuration = 2;
 force force gsri_vip_equipingVestDuration = 5;
 force force gsri_vip_equipingVestExtraDuration = 3.33333;
-force force gsri_vip_weaponAllowed = true;
+force force gsri_vip_weaponAllowed = false;
 
 // KAT - ADV Medical: Airway
 force force kat_airway_Accuvac_time = 8;
