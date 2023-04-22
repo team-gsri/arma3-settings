@@ -326,33 +326,33 @@ ace_interact_menu_moveToRoot__Medical__ACE_Head = false;
 ace_interact_menu_moveToRoot__Medical__ACE_Head__CheckBloodPressure = false;
 
 // ACE Logistics
-ace_cargo_carryAfterUnload = true;
-force force ace_cargo_enable = true;
-ace_cargo_enableRename = true;
+force force ace_cargo_carryAfterUnload = true;
+force force ace_cargo_enable = false;
+force force ace_cargo_enableRename = true;
 force force ace_cargo_loadTimeCoefficient = 5;
-ace_cargo_openAfterUnload = 0;
+force force ace_cargo_openAfterUnload = 0;
 force force ace_cargo_paradropTimeCoefficent = 2.5;
 force force ace_rearm_distance = 20;
 force force ace_rearm_level = 0;
 force force ace_rearm_supply = 0;
 force force ace_refuel_hoseLength = 12;
-force ace_refuel_progressDuration = 2;
+force force ace_refuel_progressDuration = 2;
 force force ace_refuel_rate = 1;
-force force ace_repair_addSpareParts = true;
-force force ace_repair_autoShutOffEngineWhenStartingRepair = false;
+force force ace_repair_addSpareParts = false;
+force force ace_repair_autoShutOffEngineWhenStartingRepair = true;
 force force ace_repair_consumeItem_toolKit = 0;
 force force ace_repair_displayTextOnRepair = false;
 force force ace_repair_engineerSetting_fullRepair = 0;
 force force ace_repair_engineerSetting_repair = 0;
 force force ace_repair_engineerSetting_wheel = 0;
 force force ace_repair_fullRepairLocation = 3;
-force force ace_repair_fullRepairRequiredItems = ["ace_repair_anyToolKit"];
+force force ace_repair_fullRepairRequiredItems = [];
 force force ace_repair_locationsBoostTraining = false;
-force force ace_repair_miscRepairRequiredItems = ["ace_repair_anyToolKit"];
+force force ace_repair_miscRepairRequiredItems = [];
 force force ace_repair_repairDamageThreshold = 0.6;
-force force ace_repair_repairDamageThreshold_engineer = 0.4;
+force force ace_repair_repairDamageThreshold_engineer = 0.6;
 force force ace_repair_wheelRepairRequiredItems = [];
-force ace_towing_addRopeToVehicleInventory = true;
+force force ace_towing_addRopeToVehicleInventory = true;
 
 // ACE Magazine Repack
 force force ace_magazinerepack_repackAnimation = true;
@@ -861,7 +861,7 @@ cba_ui_notifyLifetime = 4;
 cba_ui_StorePasswords = 1;
 
 // Enhanced Movement Rework
-force emr_main_allowClimbOnStandingUnits = false;
+force force emr_main_allowClimbOnStandingUnits = true;
 force force emr_main_allowMidairClimbing = true;
 force force emr_main_animSpeedCoef = 1;
 force force emr_main_animSpeedStaminaCoef = 0.4;
@@ -876,7 +876,7 @@ force force emr_main_dropViewElevation = -0.7;
 force force emr_main_enableWalkableSurface = true;
 force force emr_main_enableWeightCheck = true;
 force force emr_main_hintType = 4;
-emr_main_interactBehaviorInVehicle = "DISMOUNT";
+force force emr_main_interactBehaviorInVehicle = "DISMOUNT";
 force force emr_main_jumpDuty = 1;
 force force emr_main_jumpForwardVelocity = 1.2;
 force force emr_main_jumpingEnabled = true;
@@ -888,11 +888,11 @@ force force emr_main_maxWeightClimb1 = 100;
 force force emr_main_maxWeightClimb2 = 85;
 force force emr_main_maxWeightClimb3 = 60;
 force force emr_main_maxWeightJump = 100;
-force emr_main_minClimbTerrain = 0.3;
+force force emr_main_minClimbTerrain = 0.3;
 force force emr_main_preventHighVaulting = false;
 force force emr_main_staminaCoefficient = 1;
 force force emr_main_whitelistStr = "";
-force emr_main_yeetCoefficient = 1.4;
+force force emr_main_yeetCoefficient = 1.4;
 
 // GSRI Skydiving
 force force gsri_skydiving_enabled = true;
@@ -1157,7 +1157,7 @@ force force MRH_SAT_MaxSatAltitude = 300;
 force r_unfold_amg_restriction = false;
 
 // Zeus Enhanced
-zen_building_markers_enabled = false;
+force force zen_building_markers_enabled = true;
 force force zen_camera_adaptiveSpeed = true;
 force force zen_camera_defaultSpeedCoef = 1;
 force force zen_camera_fastSpeedCoef = 1;
@@ -1172,7 +1172,7 @@ force force zen_compat_ace_hideModules = true;
 force force zen_context_menu_enabled = 2;
 force force zen_context_menu_overrideWaypoints = false;
 force force zen_editor_addGroupIcons = true;
-zen_editor_addModIcons = false;
+force force zen_editor_addModIcons = false;
 force force zen_editor_declutterEmptyTree = true;
 force force zen_editor_disableLiveSearch = false;
 force force zen_editor_moveDisplayToEdge = true;
@@ -1183,8 +1183,8 @@ force force zen_editor_removeWatermark = true;
 force force zen_editor_unitRadioMessages = 2;
 force force zen_placement_enabled = true;
 force force zen_remote_control_cameraExitPosition = 4;
-force force zen_visibility_enabled = 0;
-zen_visibility_maxDistance = 5000;
+force force zen_visibility_enabled = 2;
+force force zen_visibility_maxDistance = 5000;
 force force zen_vision_enableBlackHot = false;
 force force zen_vision_enableBlackHotGreenCold = false;
 force force zen_vision_enableBlackHotRedCold = false;
